@@ -26,8 +26,9 @@ export default class extends React.Component {
         className={`albumCover ${clicked ? "alignBaseline" : ""}`}
         onClick={!clicked ? this.handleClick : () => {}}
       >
-        {/*This is a placeholder*/}
-        <img src='../../assets/yungnnelg-contra.jpg' /> 
+        <div className='content'>
+          {/*This is a placeholder*/}
+          <img src='../../assets/balans.jpg' alt='Yung Nnelg: Balans' /> 
 
         {clicked && (
           <SubContent />
