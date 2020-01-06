@@ -10,6 +10,7 @@ module.exports = {
   module: {
     rules: [
       {test: /\.(js)$/, use: 'babel-loader'},
+      {test: /\.(png|woff|woff2|eot|ttf|svg)$/, use: 'file-loader?name=fonts/[name].[ext]!static'},
       {test: /\.(css)$/, use: ['style-loader', 'css-loader']}
     ]
   },
