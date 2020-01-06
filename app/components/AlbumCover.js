@@ -23,16 +23,17 @@ export default class extends React.Component {
 
     return (
       <div 
-        className={`albumCover ${clicked ? "alignBaseline" : ""}`}
+        className={`albumCover ${clicked ? "alignBaseline" : "alignCenter"}`}
         onClick={!clicked ? this.handleClick : () => {}}
       >
         <div className='content'>
           {/*This is a placeholder*/}
           <img src='../../assets/balans.jpg' alt='Yung Nnelg: Balans' /> 
 
-        {clicked && (
-          <SubContent />
-        )}
+          {clicked && (
+            <SubContent />
+          )}
+        </div>
       </div>
     )
   }
