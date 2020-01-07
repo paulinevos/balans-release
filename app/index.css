@@ -113,3 +113,24 @@ a:link, a:visited {
   padding:10px 0;
   justify-content: space-around;
 }
+
+
+@media only screen and (orientation: landscape) {
+  .albumCover {
+    width: 400px
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .subscribeForm button, .subscribeForm input {
+    padding: 11px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+
+  .socialIcons svg {
+    height: 36px;
+  }
+}
