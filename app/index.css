@@ -57,6 +57,9 @@ a:link, a:visited {
 .albumCover {
   display: flex;
   width: 70%;
+}
+
+.clickable {
   cursor: pointer;
 }
 

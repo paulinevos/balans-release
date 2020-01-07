@@ -24,7 +24,7 @@ export default class extends React.Component {
 
     return (
       <div 
-        className={`albumCover ${clicked ? "alignBaseline" : "alignCenter"}`}
+        className={`albumCover ${clicked ? "alignBaseline" : "alignCenter clickable"}`}
         onClick={!clicked ? this.handleClick : () => {}}
       >
         <div className='content'>
