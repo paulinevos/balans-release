@@ -1,5 +1,6 @@
 import React from 'react'
 import SubContent from './SubContent'
+import balans from '../assets/balans.jpg'
 
 export default class extends React.Component {
   constructor(props) {
@@ -28,7 +29,7 @@ export default class extends React.Component {
       >
         <div className='content'>
           {/*This is a placeholder*/}
-          <img src='../../assets/balans.jpg' alt='Yung Nnelg: Balans' /> 
+          <img src={balans} alt='Yung Nnelg: Balans' /> 
 
           {clicked && (
             <SubContent />
