@@ -13,21 +13,6 @@ html, body {
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'tenez-black';
-  src: url('fonts/tenez_black_thefontsmaster.com-webfont.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'tenez-blackitalic';
-  src: url('fonts/tenez_black_italic_thefontsmaster.com-webfont.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
 h2 {
   font-family: hk_grotesk_prosemibold;
   font-size: 56px;
@@ -46,6 +31,7 @@ a:link, a:visited {
 
 .alignBaseline {
   align-items: baseline !important;
+  padding-top: 20px;
 }
 
 #app {
