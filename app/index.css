@@ -84,12 +84,16 @@ a:link, a:visited {
   text-transform: uppercase;
 }
 
-.subscribeForm button {
+.btn.icon svg {
+  margin-right:15px;
+}
+
+.btn, a.btn {
+  position:relative;
   letter-spacing: .15em;
   border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  vertical-align: center;
   cursor: pointer;
   text-decoration: none;
   color: #e6e6e6;
@@ -112,7 +116,6 @@ a:link, a:visited {
 .subscribeForm input {
   width: 50%;
   border:none;
-  margin-right:10px;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
   background-color: #E2E2E2;
   margin-bottom: 20px;
