@@ -1,6 +1,6 @@
 import React from 'react'
 import SubContent from './SubContent'
-import balans from '../assets/balans.jpg'
+import balans from '../assets/balans.png'
 
 export default class extends React.Component {
   constructor(props) {
