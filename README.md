@@ -1,1 +1,3 @@
-Just a repo for a landing page for now.
+# Yung Nnelg: Balans
+
+Landing page for the release of Yung Nnelg's new album, Balans. 
