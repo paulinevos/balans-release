@@ -1,9 +1,8 @@
 import React from 'react';
 import SubscribeForm from './SubscribeForm'
 import SocialIcon from './SocialIcon'
-import { IoLogoInstagram, IoLogoTwitter } from 'react-icons/io'
-import { FaSpotify } from 'react-icons/fa'
 import TourSchedule from './TourSchedule'
+import { FaSpotify, FaApple, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 const tourDates = [
   {
@@ -46,23 +45,25 @@ const tourDates = [
 export default function SubContent() {
   return (
     <React.Fragment>
-      <h2>31.01.2020</h2>
+      <h2 className='centered'>31.01.2020</h2>
       <a 
-        className='btn btn-fullWidth icon' 
+        className='btn btn-fullWidth' 
         href='https://www.toneden.io/mvsei-music-group-1/post/balans'
         target='_blank'
       >
-        <FaSpotify size={24} />
-        <span>Pre-save on Spotify</span>
+        <span>Pre-save on <FaSpotify size={24} /> +<FaApple size={26} /></span>
       </a>
       <TourSchedule dates={tourDates} />
       <SubscribeForm />
       <div className="socialIcons">
         <SocialIcon link='http://instagram.com/yungnnelg'>
-          <IoLogoInstagram size={64} />
+          <FaInstagram size={64} />
         </SocialIcon>
         <SocialIcon link='http://twitter.com/yungnnelg'>
-          <IoLogoTwitter size={64} />
+          <FaTwitter size={64} />
+        </SocialIcon>
+        <SocialIcon link='https://www.youtube.com/channel/UC1k93RerAmGS5Cxbn2q05EQ'>
+          <FaYoutube size={64} />
         </SocialIcon>
       </div>
     </React.Fragment>

@@ -19,9 +19,13 @@ body {
 
 h2 {
   font-size: 56px;
-  text-align: center;
+  text-align: left;
   padding: 10px 0;
   margin:0;
+}
+
+.centered {
+  text-align: center;
 }
 
 a:link, a:visited {
@@ -30,7 +34,6 @@ a:link, a:visited {
 
 .alignBaseline {
   align-items: baseline !important;
-  padding-top: 20px;
 }
 
 #app {
