@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack -p",
     "start": "webpack-dev-server",
-    "deploy": "node deploy"
+    "deploy": "node deploy",
+    "deploy-staging": "NODE_ENV='production' node deploy-staging"
   },
   "babel": {
     "presets": [
