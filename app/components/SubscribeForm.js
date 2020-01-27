@@ -61,36 +61,38 @@ export default class SubscribeForm extends React.Component {
 
   render() {
     return(
-      <form 
-        className='subscribeForm'
-        onSubmit={this.handleSubmit}
-        noValidate
-      >
-        <input 
-          placeholder='Email' 
-          type='text'
-          name='email'
-          value={this.state.email}
-          onChange={this.handleChange}
-          className={this.state.showErrorMsg ? "error" : undefined}
-          required
-        />
-        <button 
-          className='btn' 
-          type='submit'
+      <React.Fragment>
+        <form 
+          className='subscribeForm'
+          onSubmit={this.handleSubmit}
+          noValidate
         >
-          Subscribe
-        </button>
+          <input 
+            placeholder='EMAIL' 
+            type='text'
+            name='email'
+            value={this.state.email}
+            onChange={this.handleChange}
+            className={this.state.showErrorMsg ? "error" : undefined}
+            required
+          />
+          <button 
+            className='btn' 
+            type='submit'
+          >
+            Subscribe
+          </button>
+        </form>
         {this.state.success === false
           && <span className="smallText error">Something went wrong. Please try again later.</span>
         } 
-        <span className="smallText">
+        <span className={`smallText ${this.state.success === true ? "success" : ""}`}>
           {this.state.success === true 
             ? "You're subscribed! Keep an eye on your inbox for news."
             : "Email address will be used only for sending our newsletter. Unsubscribe any time using the link in the emails."
           }
         </span>
-      </form>
+      </React.Fragment>
     )
   }
 }
