@@ -119,6 +119,24 @@ input.error {
   justify-content: space-around;
 }
 
+#tourSchedule {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 20px 0;
+}
+
+span.date {
+  position:relative;
+  display: inline-block;
+  text-align: right;
+  width:200px;
+}
+
+span.location {
+  position: relative;
+  margin-left: 40px;
+}
 
 @media only screen and (orientation: landscape) {
   .albumCover {
@@ -147,5 +165,13 @@ input.error {
 
   .socialIcons svg {
     height: 36px;
+  }
+
+  span.date {
+    width:100px;
+  }
+
+  span.location {
+    margin-left: 20px;
   }
 }
